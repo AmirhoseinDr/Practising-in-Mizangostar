@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden; }
+
+.header {
+  position: relative; }
+  .header_main {
+    max-width: 120rem;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 60rem); }
+    .header_main--nav {
+      width: 120rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem; }
+      .header_main--nav > div > ul > li {
+        float: left;
+        list-style: none;
+        padding-right: 1.5rem; }
+        .header_main--nav > div > ul > li > a {
+          color: #fff;
+          text-decoration: none; }
+      .header_main--nav > img {
+        width: 5rem;
+        float: left;
+        cursor: pointer; }
+    .header_main--pet {
+      width: 120rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .header_main--pet > img {
+        width: 30rem;
+        margin-top: 10rem; }
+      .header_main--pet > div > h1 {
+        color: #fff;
+        font-size: 6rem;
+        padding-bottom: 1.5rem;
+        font-weight: 100; }
+      .header_main--pet > div > p {
+        color: #fff;
+        width: 40rem;
+        padding-bottom: 2.5rem; }
+      .header_main--pet > div > span:nth-of-type(1) {
+        display: inline-block;
+        width: 17rem;
+        height: 6rem;
+        border-radius: 10rem;
+        background-color: #4487FF;
+        color: #fff;
+        text-align: center;
+        line-height: 6rem;
+        cursor: pointer;
+        box-shadow: 0 0.5rem 1rem rgba(102, 102, 102, 0.603); }
+      .header_main--pet > div > span:nth-of-type(2) {
+        color: #fff;
+        margin-left: 1rem; }
+
+.maxwidth_bluewave {
+  max-width: 100rem;
+  margin: 0 auto; }
+
+.blue_wave {
+  position: relative; }
+  .blue_wave > svg {
+    margin-top: -20rem; }
+  .blue_wave--service {
+    position: absolute;
+    width: 100rem;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .blue_wave--service-left-btn, .join_max-main--up > div:last-child > span {
+      display: inline-block;
+      width: 15rem;
+      height: 5rem;
+      background-color: #fff;
+      color: #808080;
+      text-align: center;
+      line-height: 5rem;
+      border-radius: 10rem;
+      box-shadow: 0 0.5rem 1rem rgba(102, 102, 102, 0.603);
+      padding-left: 1rem; }
+    .blue_wave--service-left > span::after, .how_maxwidth-main--right > span::after {
+      content: "";
+      float: right;
+      background: #FF6752 url(https://img.icons8.com/small/16/ffffff/long-arrow-right.png) center center no-repeat;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10rem;
+      margin: .5rem 1rem 0 0;
+      cursor: pointer; }
+    .blue_wave--service-left > h1, .how_maxwidth-main--right > h1 {
+      color: #FF6752;
+      margin-bottom: 2rem;
+      font-size: 3rem; }
+    .blue_wave--service-left > p, .how_maxwidth-main--right > p {
+      width: 40rem;
+      color: #808080;
+      margin-bottom: 2rem;
+      font-size: 1.5rem; }
+    .blue_wave--service-left > h3, .how_maxwidth-main--right > h3 {
+      color: #FF6752;
+      margin-bottom: 1.5rem; }
+    .blue_wave--service-right, .how_maxwidth-main--left {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-gap: 4rem; }
+      .blue_wave--service-right > span, .how_maxwidth-main--left > span {
+        display: inline-block;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1rem;
+        background-color: #fff;
+        box-shadow: 0.1rem 0.2rem 0.7rem rgba(102, 102, 102, 0.603);
+        text-align: center; }
+        .blue_wave--service-right > span > img, .how_maxwidth-main--left > span > img {
+          opacity: .3;
+          padding-top: 2.5rem; }
+        .blue_wave--service-right > span > p, .how_maxwidth-main--left > span > p {
+          color: #707070;
+          padding-top: 2rem; }
+
+.card {
+  max-width: 120rem;
+  margin: -10rem auto 0 auto; }
+  .card > h1 {
+    color: #FF6752;
+    width: 50rem;
+    margin: -23rem auto 5rem auto;
+    text-align: center;
+    font-size: 3rem; }
+  .card_main {
+    width: 120rem;
+    display: grid;
+    grid-template-columns: repeat(5, auto); }
+    .card_main--same {
+      width: 49rem;
+      height: 25rem;
+      background-size: cover;
+      border-radius: 1.5rem; }
+      .card_main--same > span {
+        display: block;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 10rem;
+        background: url("../img/profile.jpg");
+        background-size: cover;
+        margin: 2rem auto; }
+      .card_main--same > h1 {
+        color: #fff;
+        font-weight: 200;
+        text-align: center;
+        padding: 1rem 0; }
+      .card_main--same > p {
+        color: #fff;
+        padding: 0 8rem 2rem 8rem; }
+    .card_main--1 {
+      background: url("../img/3-card red.png") center center;
+      border-radius: 1rem;
+      transform: scale(0.7); }
+    .card_main--2 {
+      background: url("../img/3-card blue.png") center center;
+      transform: scale(1);
+      margin-left: -22rem;
+      z-index: 2; }
+    .card_main--3 {
+      background: url("../img/3-card red.png") center center;
+      transform: scale(0.7);
+      margin-left: -22rem;
+      z-index: -2; }
+    .card_main::before {
+      content: "";
+      display: inline-block;
+      background: #FF6752 url(https://img.icons8.com/small/16/ffffff/long-arrow-left.png) center center no-repeat;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10rem;
+      margin: 11rem -10rem 0 0;
+      cursor: pointer; }
+    .card_main::after {
+      content: "";
+      display: inline-block;
+      background: #FF6752 url(https://img.icons8.com/small/16/ffffff/long-arrow-right.png) center center no-repeat;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 10rem;
+      margin: 11rem 0 0 -4rem;
+      cursor: pointer; }
+
+.how {
+  position: relative;
+  height: 160vh; }
+  .how_maxwidth {
+    max-width: 100rem;
+    margin: 0 auto; }
+    .how_maxwidth-main {
+      width: 100rem;
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .how_maxwidth-main--left {
+        position: relative;
+        margin-top: 25rem; }
+        .how_maxwidth-main--left > svg {
+          transform: scale(0.7);
+          margin-left: 10rem;
+          position: absolute;
+          z-index: -1; }
+        .how_maxwidth-main--left > span {
+          z-index: 1; }
+          .how_maxwidth-main--left > span:nth-of-type(2) {
+            margin: 23rem 0 0 17rem; }
+      .how_maxwidth-main--right {
+        margin-bottom: 12rem; }
+
+.circle_small {
+  width: 30rem;
+  float: left;
+  margin-top: 85rem;
+  margin-left: -15rem; }
+
+.circle_big {
+  width: 90rem;
+  float: right;
+  margin-right: -45rem;
+  margin-top: 2rem; }
+
+.join_max {
+  max-width: 100rem;
+  margin: 0 auto; }
+  .join_max-main--up {
+    position: relative;
+    width: 100rem; }
+    .join_max-main--up > svg {
+      border-radius: 2rem;
+      position: absolute; }
+    .join_max-main--up > div {
+      position: absolute; }
+    .join_max-main--up > div > img {
+      width: 26rem;
+      margin: 3rem; }
+    .join_max-main--up > div:last-child > h1 {
+      color: #FFE530;
+      margin: 5rem 0 0 33rem;
+      font-size: 3rem; }
+    .join_max-main--up > div:last-child > p {
+      color: #fff;
+      margin: 4rem 0 0 33rem;
+      width: 60rem;
+      line-height: 2.3rem;
+      font-size: 2rem; }
+    .join_max-main--up > div:last-child > span {
+      color: #FF6752;
+      margin: 4rem 0 0 33rem;
+      font-weight: bold;
+      cursor: pointer; }
+  .join_max-main--down > p {
+    color: #B1BBCD;
+    text-align: center;
+    padding-top: 40rem;
+    font-weight: bold; }
+  .join_max-main--down-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem; }
+    .join_max-main--down-logo > a > img {
+      opacity: .5;
+      filter: grayscale(100%); }
+    .join_max-main--down-logo > a:nth-of-type(1) > img {
+      width: 10rem; }
+    .join_max-main--down-logo > a:nth-of-type(2) > img {
+      width: 15rem; }
+    .join_max-main--down-logo > a:nth-of-type(3) > img {
+      width: 15rem; }
+    .join_max-main--down-logo > a:nth-of-type(4) > img {
+      width: 10rem; }
+
+.footer {
+  margin-top: 5rem; }
+  .footer_max {
+    max-width: 120rem;
+    margin: 0 auto; }
+    .footer_max--main {
+      margin-top: -28rem;
+      width: 120rem;
+      display: flex;
+      justify-content: space-between; }
+      .footer_max--main > div > h4 {
+        color: #FFE530;
+        margin-bottom: 2rem; }
+      .footer_max--main > div > p {
+        color: #fff;
+        margin-bottom: 2rem; }
+      .footer_max--main > div:nth-of-type(3) {
+        margin-top: 4rem; }
+      .footer_max--main-N-btn {
+        display: inline-block;
+        width: 15rem;
+        height: 5rem;
+        background-color: #fff;
+        color: #808080;
+        text-align: center;
+        line-height: 5rem;
+        border-radius: 10rem;
+        box-shadow: 0 0.5rem 1rem rgba(102, 102, 102, 0.603);
+        padding-left: 1rem; }
+      .footer_max--main-N > span::after {
+        content: "";
+        float: right;
+        background: #FF6752 url(https://img.icons8.com/small/16/ffffff/long-arrow-right.png) center center no-repeat;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 10rem;
+        margin: .5rem 1rem 0 0;
+        cursor: pointer; }
+      .footer_max--main-N > span {
+        width: 20rem; }
+      .footer_max--main-N > div {
+        margin-top: 3rem; }
+        .footer_max--main-N > div > span {
+          display: inline-block;
+          width: 4rem;
+          height: 4rem;
+          background-color: #fff;
+          text-align: center;
+          line-height: 4rem;
+          border-radius: 10rem;
+          margin-right: 2rem; }
+          .footer_max--main-N > div > span > img {
+            width: 2rem;
+            margin: 1rem auto;
+            opacity: .6; }
